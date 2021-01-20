@@ -1,3 +1,4 @@
+# 3
 T = int(input())
 arr = [0]*T
 address = [0]*T

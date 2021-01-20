@@ -52,7 +52,6 @@ for i in range(l):
                 count_move += 1
             elif plan[i-1] == 'L':
                 print(plan[i-1])
-                print('3333')
                 l += 1
                 l = l % 4
                 x = x + lx[l]

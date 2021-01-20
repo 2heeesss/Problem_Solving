@@ -48,6 +48,7 @@ for i in range(len(value_list)):
         max_count += 1
 
 # max 알파벳이 1개 초과하면 ?, 1개면 그거 출력
+# 2
 if max_count > 1:
     print('?')
 else:
