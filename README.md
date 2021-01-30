@@ -31,8 +31,10 @@ a = [list(map(int, input())) for _ in range(n)]
 - 기본개념
 
 
-### ?
+### 1,1 부터 탐색하기
+```python
 for i in range(1, n+1)
+```
 리스트 맨 앞에 추가하기
 deque쓰는방법
 insert쓰는방법
