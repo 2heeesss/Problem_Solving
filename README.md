@@ -22,7 +22,7 @@ print(a, end='')
 m, n = 5,4
 a = [[0]*m for _ in range(n)]
 
-# n * n 행렬 입력받기
+# n 줄의 행렬 입력받기
 a = [list(map(int, input())) for _ in range(n)]
 ```
 ### DFS
@@ -39,3 +39,13 @@ for i in range(1, n+1)
 deque쓰는방법
 insert쓰는방법
 
+### sorted, sort 차이
+```python
+# sort
+# sort는 새로운 객체에 저장을 하는것이 아니라 기존 리스트에 바로 정렬해서 저장
+arr.sort()
+
+# sorted
+# sorted는 새로운 객체에 정렬된 값을 저장
+newArr = sorted(arr, reverse = True)
+```
