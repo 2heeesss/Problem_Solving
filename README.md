@@ -49,3 +49,26 @@ arr.sort()
 # sorted는 새로운 객체에 정렬된 값을 저장
 newArr = sorted(arr, reverse = True)
 ```
+
+
+### 올림, 내림, 반올림
+```python
+#올림
+import math
+math.ceil(-3.14) # -> 3
+math.ceil(3.14) # -> 4
+
+
+#내림
+import math
+math.floor(-3.14) # -> -4
+math.floor(3.14) # -> 3
+
+math.trunc(-3.14) # -> -3    trunc()함수는 floor()과는 달리 소수점 아래는 버리고 int형으로 반환함
+
+
+#반올림
+round(3.14) # -> 3
+round(3.1415, 2) # -> 3.14    뒤에오는 인자는 소수점 3째자리에서 반올림
+round(31.415, -1) # -> 30.0    음수도 사용가능
+```
