@@ -1,9 +1,11 @@
 # for in range와 리스트 넣었을때 차이점
 import sys
+from collections import Counter
 n = int(sys.stdin.readline().rstrip())
 numberList = [0]*n
 for i in range(n):
     numberList[i] = int(sys.stdin.readline().rstrip())
+    # numberList.append(int(sys.stdin.readline()))
 
 numberList.sort()
 
@@ -21,34 +23,33 @@ def middle(numbers, n):
 
 
 def frequency(numbers, n):
-    if n == 1:
-        return numbers[0]
+    nums_s = Counter(numberList).most_common()  # 새로 알게된 사실
+    if len(nums_s) > 1:
+        if nums_s[0][1] == nums_s[1][1]:
+            return nums_s[1][0]
+        else:
+            return nums_s[0][0]
+    else:
+        return nums_s[0][0]
 
-    fre = [[0]*2 for _ in range(n)]
-    for j in range(n):
-        fre[j][1] = numbers[j]
-        for k in range(j+1, n):
-            if numbers[j] == numbers[k]:
-                fre[j][0] += 1
+    # ******* 내가 썼었던 방법 *******
+    # if n == 1:
+    #     return numbers[0]
 
-    print(fre)
+    # fre = [[0]*2 for _ in range(n)]
+    # for j in range(n):
+    #     fre[j][1] = numbers[j]
+    #     for k in range(j+1, n):
+    #         if numbers[j] == numbers[k]:
+    #             fre[j][0] += 1
 
-    min = fre[0][0]
-    result = fre[0][1]
-    # if min == 0:
-    #     fre.sort()
-    fre.sort(reverse=True)
-    print(fre)
-
-    for m in range(1, n):
-        if min == 0:
-            return result
-
-        if min != fre[m][0]:
-            return result
-        # elif min == fre[m][0]:
-        #     min = fre[m][0]
-        #     result = fre[m][1]
+    # fre.sort(reverse=True)
+    # newList = [4001]*n
+    # for k in range(n):
+    #     if fre[0][0] == fre[k][0]:
+    #         newList[k] = fre[k][1]
+    # newList.sort()
+    # return newList[1]
 
 
 def rangee(numbers, n):
