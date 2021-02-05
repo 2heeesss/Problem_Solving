@@ -72,3 +72,24 @@ round(3.14) # -> 3
 round(3.1415, 2) # -> 3.14    뒤에오는 인자는 소수점 3째자리에서 반올림
 round(31.415, -1) # -> 30.0    음수도 사용가능
 ```
+
+
+
+
+### collections.Counter
+```python
+#사용법
+from collection import Counter
+arr = [1,1,1,2,3,4]
+c = Counter(arr) # 튜플로 반환
+
+
+# Counter 를 List로 반환하기
+Counter(arr).most_common() # 튜플이 아니라 리스트로 반환
+Counter(arr).most_common(3) # 인자가 들어가면 n개만 반환함
+
+# Counter의 값 확인방법
+arr = [10, 10, 10, 20]
+arr = Counter(arr) # -> Counter({10: 3, 20: 1})
+print(arr[10]) # -> 3    카운터는 인덱스로 확인하는게 아니라 값으로 확인함
+```
