@@ -2,11 +2,11 @@
 
 ## 기본 입출력
 - 입력받아야할게 많은경우
-input()으로 받아서 시간초과 발생할때 사용한다
+input()으로 받아서 시간초과 발생할때 사용
 ```python
 import sys
-read =  sys.stdin.readline()
-print(read)
+read =  sys.stdin.readline
+n = read().rstrip()
 ```
 - 개행하지않고 출력하기
 ```python
