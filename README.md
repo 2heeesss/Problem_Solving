@@ -12,6 +12,10 @@ n = read().rstrip()
 ```python
 print(a, end='')
 ```
+ - 출력 사이사이 개행
+ ```python
+ print(1, 2, 3, sep = '\n')
+ ```
 
 
 ---
