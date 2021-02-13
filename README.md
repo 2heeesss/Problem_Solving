@@ -60,7 +60,10 @@ for i in range(1, n+1)
 ---
 <br><br>
 
+### import math
 
+---
+<br><br>
 
 
 ### DFS
