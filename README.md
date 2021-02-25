@@ -126,7 +126,7 @@ round(31.415, -1) # -> 30.0    음수도 사용가능
 #사용법
 from collection import Counter
 arr = [1,1,1,2,3,4]
-c = Counter(arr) # 튜플로 반환
+c = Counter(arr) # 튜플로 반환 -> 튜플은 수정할 수 없음
 
 
 # Counter 를 List로 반환하기
