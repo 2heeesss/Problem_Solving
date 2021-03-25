@@ -17,3 +17,4 @@ while newNum != n:
     count += 1
 
 print(count)
+print(123)
