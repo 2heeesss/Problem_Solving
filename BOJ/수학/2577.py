@@ -1,3 +1,4 @@
+# 오늘 블로그 작성
 import sys
 input = sys.stdin.readline
 
