@@ -1,8 +1,3 @@
-# 셀프넘버 출력 10000 이하
-# 삭제하기 arr.remove('lee')
-# 없는것 삭제못함
-
-
 def notSelfNum(n):
     if 1 <= n <= 9:
         one = n
