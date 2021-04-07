@@ -31,8 +31,3 @@ while n != cnt:
     cnt += 1
 
 print(sum(result))
-
-# print(10-5, 5-10)
-
-# if (10-5) == (5-10):
-#     print(123)
