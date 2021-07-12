@@ -18,7 +18,6 @@ for k in range(len(sortedWords)):
         cnt += 1
         oddWord = sortedWords[k][0]
         sortedWords[k] = list(sortedWords[k])
-        sortedWords[k][1] -= 1
 
 # 홀수번 들어온 문자가 2개 이상이면 한수 못함
 if cnt > 1:
